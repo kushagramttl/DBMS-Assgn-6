@@ -1,0 +1,268 @@
+{
+	"info": {
+		"_postman_id": "6bbbdae8-50be-4d38-bf89-cb656201e120",
+		"name": "Assignment6-relation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateMovieActorRelation",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cadf96cf-39fe-49bd-acf9-730a73229a33",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/actor/123/movie/0.7581821461033302",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actor",
+						"123",
+						"movie",
+						"0.7581821461033302"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateMovieActorRelation2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a7747a20-5bef-4217-bf2d-43db4086eb61",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/actor/0.4788047534324007/movie/0.7581821461033302",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actor",
+						"0.4788047534324007",
+						"movie",
+						"0.7581821461033302"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateMovieActorRelation3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "59b8a2e5-9450-4210-84e3-df364e0b99c4",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/actor/0.4788047534324007/movie/0.45547752477557",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actor",
+						"0.4788047534324007",
+						"movie",
+						"0.45547752477557"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMovieActorRelation1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "01e26d25-0524-42e3-9cd6-84301f11d93e",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/actor/0.4788047534324007/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actor",
+						"0.4788047534324007",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetMovieActorRelation2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "9c29e500-cd82-4fa4-86d6-63b7e3950db5",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/movie/0.45547752477557/actor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"movie",
+						"0.45547752477557",
+						"actor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteSpecificRelation",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "20de50d0-a00c-4d4c-be2c-1883ec9326ad",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/movie/0.25803797170283915/actor/0.42803465327924295",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"movie",
+						"0.25803797170283915",
+						"actor",
+						"0.42803465327924295"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteRelations",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cf5a4390-5130-43c5-8e80-b08a2af7dd66",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/actor/0.4788047534324007/movie",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actor",
+						"0.4788047534324007",
+						"movie"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

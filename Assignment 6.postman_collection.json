@@ -1,0 +1,527 @@
+{
+	"info": {
+		"_postman_id": "66d718f3-cdc3-473d-97a6-4fafd5b511dc",
+		"name": "Assignment 6",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetActor",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "e7ea79a2-4d39-4045-8d1b-8858fb26d198",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateActor1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "f1ec8e2a-2ab1-448c-b1fb-efa391898052",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\": \"123\",\n\t\"name\": \"Harrison\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateActor2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "353c6b7f-fe45-4732-8d9b-5053077507e9",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\": \"Joe\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateActor3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5108b811-8754-46a3-a7d3-e3356a6bb0e1",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"first\": \"Ryan\",\r\n\t\"last\": \"Goslyn\"\r\n\t\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetActor2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5b486c94-8732-4f47-b653-ee03f4065d1c",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/actors",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateMovie1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ed78b023-ad91-4a7a-b3c4-83a38556de85",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Joseph\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/movies/432",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"movies",
+						"432"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateActor",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ce077c16-eccf-467a-8735-6f99acfec1fe",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Joseph\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/actors/0.40021509422400925",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actors",
+						"0.40021509422400925"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateActor2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a53c6cbb-5783-4b76-824d-3c2780b46e44",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nombre\":\"Jose\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/actors/0.4788047534324007",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actors",
+						"0.4788047534324007"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveMovie",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "b15d80ff-cb8a-4ad4-a074-5cb7e026d6f9",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/movies/432",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"movies",
+						"432"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveActor",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cf80a165-3523-4306-b852-6120fdf43264",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3002/api/actors/111",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"actors",
+						"111"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateMovie1",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ae56e31f-cde3-44b7-8a49-5b39b04f13e8",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"Blade Runner\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateMovie2",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a38f0ac9-3675-402e-be38-3efa47921877",
+						"exec": [
+							"tests[\"Status code is 200\"] = responseCode.code === 200"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"La La Land\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3002/api/movies",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3002",
+					"path": [
+						"api",
+						"movies"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
